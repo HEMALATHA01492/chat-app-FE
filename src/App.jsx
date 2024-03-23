@@ -1,6 +1,3 @@
-import { useState } from "react";
-
-import "./App.css";
 import Login from "./pages/login/Login";
 import SignUp from "./pages/signup/SignUp";
 import Home from "./pages/home/Home";
@@ -20,11 +17,11 @@ function App() {
         />
         <Route
           path="/signup"
-          element={authUser ? <Navigate to={"/"} /> : <SignUp />}
+          element={authUser ? <Navigate to="/" /> : <SignUp />}
         />
         <Route
           path="/login"
-          element={authUser ? <Navigate to={"/"} /> : <Login />}
+          element={authUser ? <Navigate to="/" /> : <Login />}
         />
       </Routes>
       <Toaster />
